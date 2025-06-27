@@ -42,7 +42,7 @@ export const HomePage: React.FC<HomePageProps> = ({ articles, onArticleClick }) 
       {/* Hero Section */}
       <div className="text-center mb-8">
         <h1 className="text-4xl font-bold text-gray-900 mb-4 academic-sans">
-          My mathBlog
+          My MathBlog
         </h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto academic-serif leading-relaxed">
           这里是吕世豪的个人数学博客，用于展示学习数学的过程和思考。
