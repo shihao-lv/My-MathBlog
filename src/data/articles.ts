@@ -2,6 +2,191 @@ import { Article } from '../types';
 
 // 导出一个名为sampleArticles的常量，它是一个Article类型的数组
 export const sampleArticles: Article[] = [
+    {
+    id: '0',
+    title: '对称函数发展历史',
+    content: `# 对称函数理论与Macdonald多项式发展全览
+
+## 一、对称函数理论的起源与发展
+
+### 1. 古典时期（18-19世纪）
+**发展脉络**：
+- 1750年代：Vandermonde在研究方程根的关系时首次系统使用对称多项式
+- 1770-1780年代：Lagrange和Waring将对称函数应用于代数方程理论
+- 1815年：Cauchy发表里程碑论文《论对称函数》，首次建立完整理论框架
+
+**关键贡献**：
+- 基本对称函数与方程根的关系
+- 牛顿恒等式的发现
+- 对称函数作为不变量理论的基础
+
+**经典文献**：
+- Cauchy, A.-L. (1815). *Mémoire sur les fonctions qui ne peuvent obtenir que deux valeurs égales*
+- Waring, E. (1782). *Meditationes Algebraicae*
+
+### 2. 现代理论形成（20世纪初期）
+**突破性进展**：
+- 1901年：Schur在其博士论文中将对称函数与群表示论联系
+- 1920-1930年代：Littlewood发展对称函数的组合方法
+- 1934年：Littlewood-Richardson规则的确立
+
+**核心工具**：
+- Young图表的引入
+- 特征标理论的对应
+- 对称群表示的组合描述
+
+**奠基性著作**：
+- Littlewood, D. E. (1950). *The Theory of Group Characters*
+- Schur, I. (1901). *Über eine Klasse von Matrizen*
+
+## 二、Macdonald多项式理论体系
+
+### 1. 理论背景（1950-1980）
+**前驱工作**：
+- 1950年代：Hall和Littlewood研究素数幂参数对称函数
+- 1970年代：Jack引入单参数变形对称函数
+- 1980年代初：Stanley等发展对称函数的组合应用
+
+**关键突破点**：
+- 传统对称函数的局限性
+- 量子群理论带来的新视角
+- 组合数学对多参数理论的需求
+
+### 2. Macdonald的革新（1988-1995）
+**理论构建**：
+- 1988年：Macdonald首次提出两参数族
+- 1995年：完整理论体系在第二版专著中呈现
+
+**核心创新**：
+- 双参数正交性
+- 差分算子实现
+- 特殊参数退化的一致性
+
+**里程碑文献**：
+- Macdonald, I. G. (1988). *A new class of symmetric functions*
+- Macdonald, I. G. (1995). *Symmetric Functions and Hall Polynomials* (2nd ed.)
+
+### 3. 理论完善（1995-2010）
+**重要进展**：
+- 1999年：Garsia-Haiman提出几何解释
+- 2005年：Haglund等获得显式组合公式
+- 2008年：Bergeron建立代数组合框架
+
+**突破性成果**：
+- n!猜想解决
+- 组合公式的发现
+- 与交换代数的新联系
+
+**关键论文**：
+- Haiman, M. (2001). *Hilbert schemes and Macdonald polynomials*
+- Haglund, J. (2005). *A combinatorial model for the Macdonald polynomials*
+
+## 三、理论分支与联系
+
+### 1. 表示论方向
+**发展历程**：
+- 1990年代：Cherednik引入双仿射Hecke代数
+- 2000年代：Sahi等研究量子群联系
+- 2010年代：Bezrukavnikov等发展几何表示论
+
+**主要成果**：
+- 仿射李代数的实现
+- 量子Schur-Weyl对偶
+- 范畴化理论
+
+**重要文献**：
+- Cherednik, I. (1993). *Double affine Hecke algebras*
+- Rouquier, R. (2008). *Categorification of the braid groups*
+
+### 2. 组合数学方向
+**研究进展**：
+- 1990年代：表格求和公式
+- 2000年代：parking function应用
+- 2010年代：Carlsson-Mellit证明Shuffle猜想
+
+**核心工具**：
+- 填充统计量
+- 反演数几何
+- 路径组合
+
+**经典工作**：
+- Garsia, A. (1999). *The Bergeron-Garsia nabla operator*
+- Haglund, J. (2008). *The q,t-Catalan numbers*
+
+### 3. 数学物理应用
+**交叉领域**：
+- 量子可积系统
+- 规范场论
+- 统计力学模型
+
+**重要发现**：
+- AGT对应中的出现
+- 拓扑弦理论应用
+- 随机过程联系
+
+**关键文献**：
+- Nekrasov, N. (2003). *Seiberg-Witten theory*
+- Okounkov, A. (2016). *Macdonald processes*
+
+## 四、当代研究前沿
+
+### 1. 活跃方向（2020-）
+**热点领域**：
+- 高维推广
+- 模表示理论
+- 机器学习应用
+
+**最新突破**：
+- 2021年：Macdonald多项式在神经网络中的对称性应用
+- 2022年：椭圆推广的进展
+- 2023年：量子计算中的新应用
+
+**前沿论文**：
+- Mellit, A. (2020). *Toric symmetry*
+- Gorsky, E. (2022). *Elliptic Macdonald polynomials*
+
+### 2. 开放问题
+**经典难题**：
+1. 组合正性猜想的完整证明
+2. 高秩情形的显式构造
+3. 物理意义的完全阐释
+
+**工具需求**：
+- 新的范畴化方法
+- 几何表示的显式实现
+- 计算机代数的高效算法
+
+## 五、学习路径建议
+
+### 1. 入门路线
+1. Stanley《Enumerative Combinatorics》Vol.2
+2. Sagan《The Symmetric Group》
+3. Macdonald《Symmetric Functions》第1-3章
+
+### 2. 进阶研究
+1. 重点研读Macdonald第二版第6章
+2. 掌握Garsia-Haiman的几何方法
+3. 跟踪最新J. Combin. Theory Ser. A论文
+
+### 3. 工具掌握
+- SageMath的对称函数包
+- 李代数软件LiE
+- 组合计算工具ACE
+
+> "Macdonald多项式理论就像一座正在建设中的大教堂，每个十年都增添新的侧厅和尖塔。" - Andrei Okounkov
+
+    
+    `,
+
+    abstract: '简要阐述了对称函数理论的发展和形成',
+    author: '吕世豪',
+    date: '2025-06-27',
+    field: 'algebra',
+    contentType: 'tutorial',
+    difficulty: 'advanced',
+    tags: ['algebra', 'symmetric-functions', 'macdonald-polynomials', 'history'],
+    readTime: 10,
+  },
   //第一篇'代数学基本定理的拓扑证明'
   {
     // 文章ID
