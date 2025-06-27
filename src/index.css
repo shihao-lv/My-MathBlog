@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Computer Modern-style font fallbacks */
+@layer base {
+  body {
+    font-family: 'Computer Modern Serif', 'Times New Roman', 'Times', serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Computer Modern Sans', 'Helvetica', 'Arial', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'Computer Modern Typewriter', 'Courier New', monospace;
+  }
+}
+
+/* Custom academic styling */
+.academic-serif {
+  font-family: 'Computer Modern Serif', 'Times New Roman', 'Times', serif;
+}
+
+.academic-sans {
+  font-family: 'Computer Modern Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Mathematical content styling */
+.math-content {
+  line-height: 1.8;
+}
+
+.math-content p {
+  margin-bottom: 1.2em;
+}
+
+.math-content .katex {
+  font-size: 1.1em;
+}
+
+.math-content .katex-display {
+  margin: 1.5em 0;
+  text-align: center;
+}
+
+/* Article card hover effects */
+.article-card {
+  transition: all 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Tag styling */
+.tag {
+  @apply inline-block px-2 py-1 text-xs rounded bg-gray-100 text-gray-700 mr-2 mb-2;
+}
+
+.tag.difficulty-basic {
+  @apply bg-green-100 text-green-800;
+}
+
+.tag.difficulty-advanced {
+  @apply bg-yellow-100 text-yellow-800;
+}
+
+.tag.difficulty-research {
+  @apply bg-red-100 text-red-800;
+}
+
+/* Search and filter styling */
+.filter-active {
+  @apply bg-gray-900 text-white;
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
