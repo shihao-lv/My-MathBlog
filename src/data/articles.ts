@@ -4,7 +4,7 @@ import { Article } from '../types';
 export const sampleArticles: Article[] = [
   //计数组合学1.1笔记
      {
-    id: '11',
+    id: '1-1',
     title: '计数组合学1.1',
     content: `# 计数组合学（第一卷）第一章 §1.1 
 以此开始《计数组合学》学习，计划每日一小节，以知识点总结为主，力求精简，方便个人回顾。
